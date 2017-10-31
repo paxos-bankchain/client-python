@@ -152,9 +152,6 @@ class V1Endpoints(object):
         :param subsets: The subsets of this V1Endpoints.
         :type: list[V1EndpointSubset]
         """
-        if subsets is None:
-            raise ValueError("Invalid value for `subsets`, must not be `None`")
-
         self._subsets = subsets
 
     def to_dict(self):
